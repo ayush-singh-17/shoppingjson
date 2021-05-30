@@ -1,0 +1,336 @@
+<p>Product page</p>
+<!-- nav bar -->
+
+<body>
+    <nav class="thic" style="background: rebeccapurple;">
+        <label class="logo"><img src="./../../../assets/images/logo.png" style="
+            width: 200px;"/></label>
+        <ul>
+            <li>
+                <a class="nav-link" (click)="home()"><span class="material-icons"> home </span>Home
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" (click)="productSec()"><span class="material-icons"> sell </span>Products
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-link" (click)="cartSec()"><span class="material-icons" matBadge={{badgeNumber}}
+                        matBadgeColor="warn"> shopping_cart </span>Cart
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" (click)="Logout()"><span class="material-icons"> login </span>Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- end nav bar -->
+    <!-- *ngIf="navii" -->
+    <div *ngIf="navii">
+        <nav class="naviSearch">
+            <div class="box d-flex justify-content-center">
+                <input type="text" class="searchbar form-control" placeholder="Search..." [(ngModel)]="searchInput" (keyup)="searchFunction($event)" />
+                <button type="submit" class="button">
+                    <span class="material-icons"> search </span>
+                </button>
+            </div>
+            <div class="box d-flex justify-content-end">
+                <mat-form-field>
+                    <mat-label>Sort By Price</mat-label>
+                    <mat-select (selectionChange)="sort($event)">
+                        <mat-option value="none" selected>None</mat-option>
+                        <mat-option value="high">Price: High to Low</mat-option>
+                        <mat-option value="low">Price: Low to High</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- products section -->
+    <div *ngIf="productsSection">
+        <div class="row">
+            <div class="col-3">
+                <div class="p-4 pt-4 cate">
+                    <a class="list-group-item caat" (click)="allproducts()">All Products</a>
+                    <a class="list-group-item caat" (click)="Electronics()">Electronics</a>
+                    <a class="list-group-item caat" (click)="Cloths()">Cloths</a>
+                    <a class="list-group-item caat" (click)="shoes()">Shoes</a>
+
+                </div>
+
+                <div [(ngSwitch)]="value">
+                    <div *ngSwitchCase="1"></div>
+                    <div *ngSwitchCase="2"></div>
+                    <div *ngSwitchCase="3"></div>
+                    <div *ngSwitchCase="4"></div>
+                </div>
+            </div>
+
+            <div class="col-7" *ngIf="view">
+                <div [(ngSwitch)]="value2">
+                    <div *ngSwitchCase="1">
+                        <!-- <button class="btn btn-primary">Filter</button> -->
+                        <div class="row pt-4" *ngIf="visible">
+
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of allProduct ">
+                                <div class="card h-100">
+                                    <a><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a>{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="2">
+                        <div class="row" *ngIf="visible">
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of electro ">
+                                <div class="card h-100">
+                                    <a href="#!"><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a href="#!">{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="3">
+                        <div class="row" *ngIf="visible">
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of cloth ">
+                                <div class="card h-100">
+                                    <a href="#!"><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a href="#!">{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="4">
+                        <!-- <button class="btn btn-primary">Filter</button> -->
+                        <div class="row pt-4" *ngIf="visible">
+                            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let i of shoe ">
+                                <div class="card h-100">
+                                    <a><img class="card-img-top" src="{{ i.productImage }}" alt="..." /></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title">
+                                            <a>{{ i.productName }}</a>
+                                        </h2>
+                                        <h1>${{ i.price }}</h1>
+                                        <p class="card-text">{{ i.productDescription }}</p>
+                                        <p>
+                                            <button class="btn btn-primary" (click)="addToCart(this.i.id)">
+                                                Add to Cart</button>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">★ ★ ★ ★ ☆</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ******************************************************* -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- home section -->
+    <div *ngIf="homeSection">
+
+
+        <div>
+            <div class="row" style="background: red;">
+                <div class="col-6 m">
+                    <h1>About us</h1>
+                    <article>
+                        ShopingCart is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. ShopingCart strives to be Earth's Most Customer-Centric Company, Earth's Best
+                        Employer, and Earth's Safest Place to Work. Customer reviews, 1-Click shopping, personalized recommendations, Prime, Fulfillment by ShopingCart, AWS, Kindle Direct Publishing, Kindle, Career Choice, Fire tablets, Fire TV, ShopingCart
+                        Echo, Alexa, Just Walk Out technology, ShopingCart Studios, and The Climate Pledge are some of the things pioneered by ShopingCart.
+                    </article>
+                    <br /><br />
+                    <button class="btn btn-dark btn-lg px-4 mr-3" type="submit" (click)="productSec()">
+                        Shop With Us
+                    </button>
+                </div>
+                <div class="col-6">
+                    <img src="./../../../assets/images/shoes.jpg" />
+                </div>
+            </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./../../../assets/images/laptop.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./../../../assets/images/iphone.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./../../../assets/images/shoes.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="./../../../assets/images/iphone.jpg" />
+                </div>
+                <div class="col-6">
+
+                    <h1>Our Happy Customers</h1>
+                    <article>
+                        ShopingCart is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. ShopingCart strives to be Earth's Most Customer-Centric Company, Earth's Best
+                        Employer, and Earth's Safest Place to Work. Customer reviews, 1-Click shopping, personalized recommendations, Prime, Fulfillment by ShopingCart, AWS, Kindle Direct Publishing, Kindle, Career Choice, Fire tablets, Fire TV, ShopingCart
+                        Echo, Alexa, Just Walk Out technology, ShopingCart Studios, and The Climate Pledge are some of the things pioneered by ShopingCart.
+                    </article>
+                    <br /><br />
+                    <button class="btn btn-dark btn-lg px-4 mr-3" type="submit" (click)="productSec()">
+                        Shop With Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add to cart section -->
+    <div *ngIf="cartSection">
+
+        <h2 class="count">
+            Cart (<span>{{ count }}</span> items)
+        </h2>
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <!-- *ngFor="let i of displayInCart" -->
+                                <tr>
+
+                                    <th scope="col">Image</th>
+                                    <th scope="col">productName</th>
+                                    <th scope="col">Available</th>
+                                    <th scope="col" class="text-center">Quantity</th>
+                                    <th scope="col" class="text-right">Price</th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let i of displayInCart">
+                                    <td><img src={{i.productImage}} width="60px" height="60px" /> </td>
+                                    <td>{{i.productName}}</td>
+                                    <td>In stock</td>
+                                    <td><input class="form-control" type="text" value="1" [(ngModel)]="inputQyt" /></td>
+                                    <td class="text-right">&#8377; {{i.price}}</td>
+                                    <!-- <td class="text-right"><button class="btn btn-sm btn-danger">Delete</button> </td> -->
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sub-Total</td>
+                                    <td class="text-right">0000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Shipping</td>
+                                    <td class="text-right">0000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><strong>Total</strong></td>
+                                    <td class="text-right"><strong>0000</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 text-center">
+                            <form id="f1" (ngSubmit)="checkOutMail($event)" class="my-3">
+
+                                <label class="form-label my-0" [hidden]="true">Email</label>
+                                <input class="form-control" [hidden]="true" type="email" readonly placeholder="Enter your Email" name="user_email" [(ngModel)]="mail" required>
+                                <label [hidden]="true">Message</label>
+                                <input [hidden]="true" name="message" readonly [(ngModel)]="inputOtp">
+
+                                <label [hidden]="true">Something</label>
+                                <input [hidden]="true" name="to_name" readonly [(ngModel)]="someName"><br>
+
+                                <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                            </form>
+                            <div *ngIf="check">
+                                <img src='../../../assets/th.png'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- logout sectionn -->
+    <div *ngIf="LogoutSection">
+        <div class="col-sm-12 col-md-6 text-center">
+            <button class="btn btn-lg btn-block btn-success text-uppercase">Logout</button>
+        </div>
+
+
+    </div>
+
+</body>

@@ -1,0 +1,384 @@
+{
+  "user": [
+    {
+      "firstName": "mayra",
+      "lastName": "kush",
+      "email": "mayra@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "acceptTandC": false,
+      "cart": [
+        16,
+        13,
+        14,
+        12
+      ],
+      "id": 1
+    },
+    {
+      "firstName": "aa",
+      "lastName": "aa",
+      "email": "ayush.singh2000dav@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "acceptTandC": true,
+      "cart": [],
+      "id": 2
+    },
+    {
+      "firstName": "aa",
+      "lastName": "ss",
+      "email": "ayush.singh2000dav@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "acceptTandC": true,
+      "cart": [],
+      "id": 3
+    },
+    {
+      "firstName": "ss",
+      "lastName": "ss",
+      "email": "ayush.singh2000dav@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "acceptTandC": true,
+      "cart": [],
+      "id": 4
+    },
+    {
+      "firstName": "ss",
+      "lastName": "ss",
+      "email": "ayush.singh2000dav@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "acceptTandC": true,
+      "cart": [],
+      "id": 5
+    },
+    {
+      "firstName": "ss",
+      "lastName": "ss",
+      "email": "ayush.singh2000dav@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "acceptTandC": true,
+      "cart": [],
+      "id": 6
+    }
+  ],
+  "allProducts": [
+    {
+      "id": 1,
+      "productName": "liberty shoes",
+      "price": 1999,
+      "productDescription": "most comfortable shoes.",
+      "productImage": "../assets/images/shoes.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 12,
+      "productName": "jens",
+      "price": 6777,
+      "productDescription": "most comfortable jens.",
+      "productImage": "../assets/images/lee.jpg",
+      "category": "cloths"
+    },
+    {
+      "id": 3,
+      "productName": "liberty shoes ",
+      "price": 699,
+      "productDescription": "most comfortable shoes.",
+      "productImage": "../assets/images/shoes.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 4,
+      "productName": "dell laptop",
+      "price": 95000,
+      "productDescription": "best gaming lappy ever.",
+      "productImage": "../assets/images/laptop.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 14,
+      "productName": "jens",
+      "price": 1099,
+      "productDescription": "mst comfortable jens.",
+      "productImage": "../assets/images/lee.jpg",
+      "quantity": 0,
+      "category": "jens"
+    },
+    {
+      "id": 6,
+      "productName": "basket ball jorden",
+      "price": 89990,
+      "productDescription": "best grip for basketball cort with highly bouncly . ",
+      "productImage": "../assets/images/bs.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 7,
+      "productName": "jersey",
+      "price": 35000,
+      "productDescription": "this is original leakers jersey.",
+      "productImage": "../assets/images/leakers.jpg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 8,
+      "productName": "basket ball jorden",
+      "price": 7000,
+      "productDescription": "this is first copy shoes",
+      "productImage": "../assets/images/bs.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 9,
+      "productName": "snikers",
+      "price": 500,
+      "productDescription": "sneakers for formal as well as casual dress",
+      "productImage": "../assets/images/shoes.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 2,
+      "productName": "i Phone X",
+      "price": 90000,
+      "productDescription": "The iPhone is a smartphone developed by Apple. ... The iPhone has a sleek, minimalist design, and differs from other smartphones in its lack of buttons. ",
+      "productImage": "../assets/images/iphone.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 10,
+      "productName": "Floral  ",
+      "price": 4500,
+      "productDescription": "1950s Vintage Style Simply Irresistible Floral Print Midi Dress",
+      "productImage": "../assets/images/fm.jpg",
+      "category": "cloths"
+    },
+    {
+      "id": 11,
+      "productName": "iphone 12",
+      "price": 100000,
+      "productDescription": "128 internal with modarapido touch",
+      "productImage": "../assets/images/iphone.jpg",
+      "category": "electronics"
+    },
+    {
+      "id": 13,
+      "productName": "Nike Air Mag sneakers",
+      "price": 15000,
+      "productDescription": "Nearly fifty years after its conception in 1971, Nike’s iconic Swoosh logo remains unchanged, showcasing a prevalent and pioneering symbol for the brand.Oh my gosh, there’s so much cushion in them… feels like you’re on a cloud. Super comfy! And the fit is perfect. I’ll definitely use these for recovery runs… they’re easy on my legs and feel great on my feet.",
+      "productImage": "../assets/images/bs.jpg",
+      "quantity": 0,
+      "category": "shoe"
+    },
+    {
+      "id": 15,
+      "productName": "air max",
+      "price": 9999,
+      "productDescription": "air max utempo best for dunk in basketball",
+      "quantity": 0,
+      "productImage": "./../assets/images/air.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 16,
+      "productName": "PUMA XRay Jr Dark Shad Lace-Up Casual Shoes",
+      "price": 3249,
+      "productDescription": "PUMA is one of the world’s leading Sports Brands, designing, developing, selling and marketing footwear, apparel and accessories. For 70 years, PUMA has established a history of making fast product designs for the fastest athletes on the planet. .",
+      "productImage": "./../assets/images/puma.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 17,
+      "productName": "remonds suits ",
+      "price": 3999,
+      "productDescription": "most smooth touched cloths ever ,with long lasting tendency ever.",
+      "productImage": "./../assets/images/fm.jpg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 18,
+      "productName": "lenevo",
+      "price": 7999,
+      "productDescription": "gaming laptop with mechnical keybord available for smooth touched.",
+      "productImage": "./../assets/images/laptop.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    }
+  ],
+  "electronics": [
+    {
+      "id": 1,
+      "productName": "laptop",
+      "price": 28999,
+      "productDescription": "gaming laptop.",
+      "productImage": "./../assets/images/laptop.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 2,
+      "productName": "i Phone X",
+      "price": 91100,
+      "productDescription": "The iPhone is a smartphone developed by Apple. ... The iPhone has a sleek, minimalist design, and differs from other smartphones in its lack of buttons. ",
+      "productImage": "./../assets/images/iphone.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 3,
+      "productName": "i Phone 12 ",
+      "price": 10999,
+      "productDescription": "The iPhone is a smartphone developed by Apple. ... The iPhone has a sleek, minimalist design, and differs from other smartphones in its lack of buttons.",
+      "productImage": "./../assets/images/iphone.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 4,
+      "productName": "samsung glaxy s21",
+      "price": 89000,
+      "productDescription": "first 5g phones ever.",
+      "productImage": "./../assets/images/s20.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 5,
+      "productName": "Apple MacBook Pro 13-Inch",
+      "price": 90000,
+      "productDescription": "A controversial keyboard once present on every Apple laptop is now a thing of the past. ",
+      "productImage": "./../assets/images/mak.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    },
+    {
+      "id": 6,
+      "productName": "macbook",
+      "price": 99990,
+      "productDescription": "Apple iPad Pro 12.9-inch  ",
+      "productImage": "./../assets/images/mak.jpg",
+      "quantity": 0,
+      "category": "electronics"
+    }
+  ],
+  "Cloths": [
+    {
+      "id": 7,
+      "productName": "Shirt",
+      "price": 2200,
+      "productDescription": "Mens Blue Printed Slim Fit Shirt. Sure to reserve a spot in your core wardrobe, this Mens sky blue slim fit shirt from our Miami collection is crafted from 100% cotton.",
+      "productImage": "./../assets/images/shirt.jpeg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 8,
+      "productName": "jens",
+      "price": 1599,
+      "productDescription": "1950s Vintage Style Simply jens",
+      "productImage": "./../assets/images/jk.jpg",
+      "quantity": 0,
+      "category": "cloths"
+    },
+    {
+      "id": 9,
+      "productName": "T-shirT",
+      "price": 1399,
+      "productDescription": "most comfortable ",
+      "productImage": "./../assets/images/shirt.jpeg",
+      "category": "cloths"
+    },
+    {
+      "id": 10,
+      "productName": "track pants ",
+      "price": 1399,
+      "productDescription": "most comfortable",
+      "productImage": "./../assets/images/track.jpg",
+      "category": "cloths"
+    },
+    {
+      "id": 11,
+      "productName": "lee",
+      "price": 2999,
+      "productDescription": " very comfortable",
+      "productImage": "./../assets/images/lee.jpg",
+      "category": "cloths"
+    },
+    {
+      "id": 12,
+      "productName": "track pants",
+      "price": 599,
+      "productDescription": "most comfortable.",
+      "productImage": "./../assets/images/track.jpg",
+      "category": "cloths"
+    }
+  ],
+  "shoes": [
+    {
+      "id": 13,
+      "productName": "Nike",
+      "price": 55000,
+      "productDescription": "Nearly fifty years after its conception in 1971, Nike’s iconic Swoosh logo remains unchanged, showcasing a prevalent and pioneering symbol for the brand.Oh my gosh, there’s so much cushion in them… feels like you’re on a cloud. Super comfy! And the fit is perfect. I’ll definitely use these for recovery runs… they’re easy on my legs and feel great on my feet.",
+      "productImage": "./../assets/images/air.jpg",
+      "quantity": 0,
+      "category": "shoe"
+    },
+    {
+      "id": 14,
+      "productName": "jordan",
+      "price": 12099,
+      "productDescription": "dunking shoes .",
+      "productImage": "./../assets/images/puma.jpg",
+      "quantity": 0,
+      "category": "shoe"
+    },
+    {
+      "id": 15,
+      "productName": "Nike VP",
+      "price": 9999,
+      "productDescription": "We picked basketball as the first sport for Nike Adapt intentionally because of the demands that athletes put on their shoes,” says Eric Avar, Nike VP Creative Director of Innovation. “During a normal basketball game the athlete’s foot changes and the ability to quickly change your fit",
+      "quantity": 0,
+      "productImage": "./../assets/images/bs.jpg",
+      "category": "shoes"
+    },
+    {
+      "id": 16,
+      "productName": "PUMA XRay",
+      "price": 8549,
+      "productDescription": "highly recomended shoes .",
+      "productImage": "./../assets/images/bs.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 17,
+      "productName": "casual",
+      "price": 3999,
+      "productDescription": "Step into affordable luxury with our Platinum Metallic Training Shoes. This fashionable, flirty silhouette features a SoftFoam+ sockliner and unique sculpting for an unparalleled look and feel that's sure to be a favourite among gym goers.",
+      "productImage": "./../assets/images/shoes.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    },
+    {
+      "id": 18,
+      "productName": "Puma ",
+      "price": 7999,
+      "productDescription": "most comfortable shoes ever",
+      "productImage": "./../assets/images/puma.jpg",
+      "quantity": 0,
+      "category": "shoes"
+    }
+  ]
+}
