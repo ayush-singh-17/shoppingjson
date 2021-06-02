@@ -45,6 +45,7 @@ export class AuthService {
     {
       console.log(mail);
       console.log(pass);
+    console.log("heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")
       for(let i = 0; i < this.info.length; i++){
         console.log("inside for service");
         console.log(this.info[i]);
